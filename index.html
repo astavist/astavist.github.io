@@ -109,6 +109,26 @@
       font-size: 14px;
       opacity: 0.6;
     }
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .shot {
+      border-radius: 18px;
+      background: #f3f3f3;
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .shot img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
   </style>
 </head>
 
@@ -163,9 +183,15 @@
       </div>
     </div>
 
-    <div class="image-placeholder">
-      Image placeholder – app screenshots or flow
-    </div>
+      <div class="screenshots">
+        <div class="shot"><img src="assets/screenshots/s1.png" alt="WishLink screenshot 1"></div>
+        <div class="shot"><img src="assets/screenshots/s2.png" alt="WishLink screenshot 2"></div>
+        <div class="shot"><img src="assets/screenshots/s3.png" alt="WishLink screenshot 3"></div>
+        <div class="shot"><img src="assets/screenshots/s4.png" alt="WishLink screenshot 4"></div>
+        <div class="shot"><img src="assets/screenshots/s5.png" alt="WishLink screenshot 5"></div>
+        <div class="shot"><img src="assets/screenshots/s6.png" alt="WishLink screenshot 6"></div>
+      </div>
+
   </section>
 
   <!-- CTA -->
